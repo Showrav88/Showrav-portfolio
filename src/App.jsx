@@ -3,7 +3,6 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Float, MeshDistortMaterial, Sphere } from '@react-three/drei';
 import { motion, useScroll, useTransform, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
 import { Github, Linkedin, Mail, Phone, ExternalLink, Download, Camera, Gamepad2, BookOpen, Code, Menu, X, Award, Briefcase, Wrench } from 'lucide-react';
-import Gaming from './components/Gaming';
 import Projects from './components/Projects';
 import Research from './components/Research';
 
@@ -156,7 +155,7 @@ const AnimatedPCScreen = () => {
   };
 
   const texts = [
-    'I am MD. Mahmudul Hasan, a Software Engineer who turns coffee and logic into clean, interactive web experiences. I specialize in building robust apps with React and Python, focusing on where high-end performance meets great design. Welcome to my digital workspace—let\'s create something cool.',
+    'I am Showrav Karamkar, a Software Engineer who turns coffee and logic into clean, interactive web experiences. I specialize in building robust apps with React and Python, focusing on where high-end performance meets great design. Welcome to my digital workspace—let\'s create something cool.',
     'Git commit -m \'I don\'t know what I\'m doing anymore 🚩\'',
     'Software Engineer & Web Developer',
     'Creating amazing digital experiences',
@@ -641,7 +640,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['About', 'Education', 'Passions', 'Gaming', 'Projects', 'Research', 'Skills', 'Workspace', 'Contact'];
+  const navItems = ['About', 'Education', 'Projects', 'Research', 'Skills', 'Workspace', 'Contact'];
 
   return (
     <motion.nav
@@ -733,7 +732,7 @@ const Hero = () => {
         <Canvas camera={{ position: [0, 1.2, 6], fov: 50 }} dpr={[1, 2]}>
           <Suspense fallback={null}>
             <Scene3D
-              introText="Hi, I am MD. Mahmudul Hasan."
+              introText="Hi, I am Showrav Karamkar."
               profileSrc="/images/profile.jpg"
               screenSrc="/images/photography1.jpg"
               use3DCase={true}
@@ -796,7 +795,7 @@ const Hero = () => {
             <div className="w-60 h-30 sm:w-36 sm:h-46 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#0a9396] shadow-2xl mx-auto">
               <img
                 src="/images/profile.jpg"
-                alt="MD. Mahmudul Hasan"
+                alt="Showrav Karamkar"
                 className="w-full h-full object-cover"
                 loading="eager"
               />
@@ -809,7 +808,7 @@ const Hero = () => {
             transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-[#94d2bd] via-[#0a9396] to-[#ee9b00] bg-clip-text text-transparent"
           >
-            MD. Mahmudul Hasan
+            Showrav Karamkar
           </motion.h1>
 
           <motion.div
@@ -833,7 +832,7 @@ const Hero = () => {
 >
   {['View Work', 'GitHub', 'Contact'].map((text, i) => {
     const getHref = () => {
-      if (text === 'GitHub') return 'https://github.com/Mahmudul20-42895-1';
+      if (text === 'GitHub') return 'https://github.com/Showrav88';
       if (text === 'View Work') return '#projects';
       return '#contact';
     };
@@ -908,28 +907,17 @@ const About = () => {
               </p>
 
               <p className="text-[#e9d8a6] text-lg leading-relaxed mb-6">
-                I specialize in full-stack development with a strong focus on frontend engineering, where performance, accessibility, and clean architecture matter. I enjoy turning complex ideas into simple, usable digital products.
+                I specialize in full-stack development with a strong focus on backend engineering, where performance, accessibility, and clean architecture matter. I enjoy turning complex ideas into simple, usable digital products.
               </p>
 
               <p className="text-[#e9d8a6] text-lg leading-relaxed mb-6">
-                My technical skill set includes React, Three.js, React Three Fiber, Tailwind CSS, Node.js, and modern JavaScript tooling. I have hands-on experience building responsive, scalable applications for real-world use cases.
-              </p>
-
-              <p className="text-[#e9d8a6] text-lg leading-relaxed mb-6">
-                I have a growing interest in 3D web graphics and animation, where I explore creative ways to blend design and engineering. I enjoy experimenting with motion, interactivity, and immersive user experiences on the web.
+                My technical skill set includes Dot net MVC, API, PostgreSQL, JavaScript tooling. I have hands-on experience building responsive, scalable applications for real-world use cases.
               </p>
 
               <p className="text-[#e9d8a6] text-lg leading-relaxed mb-6">
                 Alongside development work, I have experience with ERP system workflows and understand idea-level system architecture, which helps me think beyond code and focus on complete solutions.
               </p>
 
-              <p className="text-[#e9d8a6] text-lg leading-relaxed mb-6">
-                Beyond coding, I’m deeply passionate about photography, street photography, and gaming. These creative outlets influence my design sense and help me approach problems from different perspectives.
-              </p>
-
-              <p className="text-[#e9d8a6] text-lg leading-relaxed">
-                I also contribute to research in natural language processing and explainable AI, with a focus on transformer models, interpretability techniques, and model efficiency, bridging academic research with practical applications.
-              </p>
 
         </GlassCard>
       </div>
@@ -945,24 +933,24 @@ const Education = () => {
       degree: 'Bachelor of Science in Computer Science & Engineering',
       institution: 'American International University-Bangladesh',
       location: 'Dhaka, Bangladesh',
-      period: '2020 - Present',
-      grade: 'CGPA: 3.00 out of 4.00',
+      period: '2020 - 2024',
+      grade: 'CGPA: 3.19 out of 4.00',
       color: '#0a9396'
     },
     {
       degree: 'Higher Secondary Certificate',
-      institution: 'Shah Makhdum College',
-      location: 'Rajshahi, Bangladesh',
+      institution: 'Milestone College Uttra, Dhaka',
+      location: '30 & 44, Milestone College, Gareeb-e-Nawaz Ave, Dhaka',
       period: '2017 - 2019',
-      grade: 'GPA: 4.64 out of 5.00',
+      grade: 'GPA: 5.00 out of 5.00',
       color: '#48d6caff'
     },
     {
       degree: 'Secondary School Certificate',
-      institution: 'Haji Mohammad Mohsin School Rajshahi',
-      location: 'Rajshahi, Bangladesh',
+      institution: 'Lakshmipur Adarsha Samad Government High School',
+      location: 'Lakshmipur, Bangladesh',
       period: '2015 - 2017',
-      grade: 'GPA: 4.57 out of 5.00',
+      grade: 'GPA: 4.05 out of 5.00',
       color: '#94d2bd'
     }
   ];
@@ -1005,159 +993,18 @@ const Education = () => {
   );
 };
 
-// Passions Section
-const Passions = () => {
-  const passions = [
-    {
-      title: 'Wedding Photography',
-      image: '/images/photography1.jpg',
-      link: 'https://www.instagram.com/p/CyprUCYPsYB/',
-      icon: <img 
-      src="/images/copyright.jpg" 
-      alt="Copyright icon" 
-      className="w-6 h-6 object-cover" 
-      style={{  
-            filter: 'brightness(0) invert(1)',
-      }}
-/>
-    },
-    {
-      title: 'Portrait Photography',
-      image: '/images/photography2.jpg',
-      link: 'https://www.instagram.com/p/DHJpvAMTm7l/',
-      icon: <img 
-      src="/images/copyright.jpg" 
-      alt="Copyright icon" 
-      className="w-6 h-6 object-cover" 
-      style={{  
-            filter: 'brightness(0) invert(1)',
-      }}
-/>
-    },
-    {
-      title: 'Product Photography',
-      image: '/images/photography3.jpg',
-      link: 'https://www.instagram.com/p/C1WjTjatz8C/',
-      icon: <img 
-      src="/images/copyright.jpg" 
-      alt="Copyright icon" 
-      className="w-6 h-6 object-cover" 
-      style={{  
-            filter: 'brightness(0) invert(1)',
-      }}
-/>
-    },
-
-    {
-      title: 'Street Photography',
-      image: '/images/photography4.jpg',
-      link: 'https://www.instagram.com/p/DPTC3eHkwXK/?img_index=5&igsh=MWhlMzYxd3d2Y25xbw==',
-      icon: <img 
-      src="/images/copyright.jpg" 
-      alt="Copyright icon" 
-      className="w-6 h-6 object-cover" 
-      style={{  
-            filter: 'brightness(0) invert(1)',
-      }}
-/>
-    },
-
-    {
-      title: 'Abstract Photography',
-      image: '/images/photography5.jpg',
-      link: 'https://www.instagram.com/p/C5wjOQASuR7iE2Bx_c7a6PUdWgOfwcqplx7SM00/?igsh=cnU5anpocGdlczFn',
-      icon: <img 
-      src="/images/copyright.jpg" 
-      alt="Copyright icon" 
-      className="w-6 h-6 object-cover" 
-      style={{  
-            filter: 'brightness(0) invert(1)',
-      }}
-/>
-    },
-
-    {
-      title: 'Symmetric Photography',
-      image: '/images/photography6.jpg',
-      link: 'https://www.instagram.com/p/Ch2TXSZJSsds5Ygzucy8RZ6kpc46i_uQlgGY5I0/?igsh=Z24wbGVxNGE1dTA4',
-      icon: <img 
-      src="/images/copyright.jpg" 
-      alt="Copyright icon" 
-      className="w-6 h-6 object-cover" 
-      style={{  
-            filter: 'brightness(0) invert(1)',
-      }}
-/>
-    },
-
-    
-
-    
-
-  ];
-  return (
-    <section id="passions" className="min-h-screen py-10 px-2 bg-gradient-to-b from-[#001219] to-[#005f73]">
-      <div className="max-w-6xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1.5, y: 0 }}
-          viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center mb-20 bg-gradient-to-r from-[#94d2bd] to-[#ee9b00] bg-clip-text text-transparent"
-        >
-          Passions
-        </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {passions.map((passion, index) => (
-            <motion.a
-              key={index}
-              href={passion.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: index * 0.15 }}
-              whileHover={{ y: -10, scale: 1.02 }}
-              className="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer"
-            >
-              <img
-                src={passion.image}
-                alt={passion.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#001219] via-[#001219]/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="text-[#ee9b00]">{passion.icon}</div>
-                  <h3 className="text-2xl font-bold text-white">{passion.title}</h3>
-                </div>
-                <div className="flex items-center gap-2 text-[#94d2bd] opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>View on Instagram</span>
-                  <ExternalLink size={16} />
-                </div>
-              </div>
-            </motion.a>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
 
 // Skills Section
 const Skills = () => {
   const programmingLanguages = [
-    { name: 'Python', color: '#3776AB' },
     { name: 'C++', color: '#00599C' },
     { name: 'C#', color: '#239120' },
     { name: 'Java', color: '#007396' }
   ];
 
   const frameworks = [
-    { name: 'React', color: '#61DAFB' },
-    { name: 'Django', color: '#092E20' }
+    { name: 'React', color: '#61DAFB' }
   ];
 
   const softwareTools = [
@@ -1166,6 +1013,9 @@ const Skills = () => {
     { name: 'Excel', color: '#217346' },
     { name: 'Benefica', color: '#0a9396' },
     { name: 'CISCO', color: '#1BA0D7' },
+    { name: 'PostgreSQL', color: '#336791' },
+    { name: 'Dot net MVC', color: '#512BD4' },
+    { name: 'Dot net API', color: '#512BD4' },
     { name: 'Adobe Premiere Pro', color: '#9999FF' },
     { name: 'Adobe Lightroom', color: '#31A8FF' },
     { name: 'Photoshop', color: '#31A8FF' }
@@ -1191,36 +1041,34 @@ const Skills = () => {
       year: '2023'
     },
     {
-      title: 'AI Fundamentals',
+      title: 'SQA: Manual & Automated Testing',
       organization: 'Online Course',
-      description: 'Completed basic course covering fundamental concepts of Artificial Intelligence.',
-      year: '2024'
+      description: 'Completed basic course covering fundamental concepts of Manual & Automated Testing.',
+      year: '2025'
     }
   ];
 
   const experiences = [
     {
-      title: 'Web Development and Management',
-      company: 'Divine IT',
-      location: 'Dhaka, Bangladesh',
-      period: '2025 – Present',
+      title: 'Junior SQA Engineer',
+      company: 'Skiff Technologies',
+      location: 'Chattogram, Bangladesh',
+      period: ' April 2024– June 2024',
+      type: 'Contractual',
       type: 'Software Company'
     },
     {
-      title: 'Public Relations Officer',
-      company: 'American International University-Bangladesh (AIUB)',
+      title: 'Software Quality Assurance Intern',
+      company: 'iLearnX Technologies',
       location: 'Dhaka, Bangladesh',
-      period: '2019 – 2020',
-      type: 'Part-Time | Campus Day',
-      description: 'Coordinated and executed university events, developed engaging communication materials.'
-    },
+      period: 'Jan 2024– March 2024'
+        },
     {
-      title: 'Executive Representative',
-      company: 'AIUBPC, American International University (AIUB)',
+      title: 'Associate,',
+      company: 'Quantanite BD Ltd',
       location: 'Dhaka, Bangladesh',
-      period: '2018 – 2019',
-      type: 'Club Activity',
-      description: 'Represented the AIUBPC as an executive member, fostering communication and collaboration within the club and with the wider university community.'
+      period: 'June 2024– Present',
+      
     }
   ];
 
@@ -1255,9 +1103,9 @@ const Skills = () => {
           </motion.h2>
           
           <motion.a
-            href="/cv.pdf"  // Simple path
-            download="Mahmudul_Hasan_CV.pdf"
-            target="_blank"  // Add this
+            href="/cv.pdf"
+            download="Showrav_Karamkar_CV.pdf"
+            target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1537,7 +1385,7 @@ const Contact = () => {
             from_name: formData.name,
             from_email: formData.email,
             message: formData.message,
-            to_email: 'hasan.mahmudul.42895@gmail.com'
+            to_email: 'karmakar.showrav.42927@gmail.com'
           }
         })
       });
@@ -1577,7 +1425,7 @@ const Contact = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <motion.a
-            href="mailto:hasan.mahmudul.42895@gmail.com"
+            href="mailto:karmakar.showrav.42927@gmail.com"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -1587,12 +1435,12 @@ const Contact = () => {
             <Mail size={32} className="text-[#0a9396]" />
             <div>
               <p className="text-[#94d2bd] text-sm">Email</p>
-              <p className="text-[#e9d8a6] font-semibold text-sm break-all">hasan.mahmudul.42895@gmail.com</p>
+              <p className="text-[#e9d8a6] font-semibold text-sm break-all">karmakar.showrav.42927@gmail.com</p>
             </div>
           </motion.a>
 
           <motion.a
-            href="tel:+8801964530280"
+            href="tel:+8801849951910"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -1602,12 +1450,12 @@ const Contact = () => {
             <Phone size={32} className="text-[#ee9b00]" />
             <div>
               <p className="text-[#94d2bd] text-sm">Phone</p>
-              <p className="text-[#e9d8a6] font-semibold">+880 1964530280</p>
+              <p className="text-[#e9d8a6] font-semibold">+880 1849951910</p>
             </div>
           </motion.a>
 
           <motion.a
-            href="https://github.com/Mahmudul20-42895-1"
+            href="https://github.com/Showrav88"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, x: -50 }}
@@ -1620,12 +1468,12 @@ const Contact = () => {
             <Github size={32} className="text-[#94d2bd]" />
             <div>
               <p className="text-[#94d2bd] text-sm">GitHub</p>
-              <p className="text-[#e9d8a6] font-semibold">Mahmudul20-42895-1</p>
+              <p className="text-[#e9d8a6] font-semibold">Showrav88</p>
             </div>
           </motion.a>
 
           <motion.a
-            href="https://www.linkedin.com/in/mahmudul-hasan-8425a1245/"
+            href="https://www.linkedin.com/in/showrav-karmakar/"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, x: 50 }}
@@ -1638,7 +1486,7 @@ const Contact = () => {
             <Linkedin size={32} className="text-[#e9d8a6]" />
             <div>
               <p className="text-[#94d2bd] text-sm">LinkedIn</p>
-              <p className="text-[#e9d8a6] font-semibold">Mahmudul Hasan</p>
+              <p className="text-[#e9d8a6] font-semibold">Showrav Karmakar</p>
             </div>
           </motion.a>
         </div>
@@ -1709,34 +1557,10 @@ const Contact = () => {
 const Footer = () => {
   const socialLinks = [
     {
-      name: 'Facebook',
-      url: 'https://www.facebook.com/share/1ARZ7KpVev/?mibextid=wwXIfr',
-      icon: '/images/facebook.jpg',
-      color: '#1877f2'
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/_mrid._.l?igsh=a3Q3YW8wN2RtdGxj&utm_source=qr',
-      icon: '/images/instagram.jpg',
-      color: '#e4405f'
-    },
-    {
-      name: 'Discord',
-      url: 'https://discord.com/users/mhmridul',
-      icon: '/images/discord.jpg',
-      color: '#5865f2'
-    },
-    {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/mahmudul-hasan-8425a1245/',
+      url: 'https://www.linkedin.com/in/showrav-karmakar/',
       icon: '/images/linkedin.jpg',
       color: '#0a66c2'
-    },
-    {
-      name: 'YouTube',
-      url: 'https://www.youtube.com/@Siremurphy',
-      icon: '/images/youtube.jpg',
-      color: '#ff0000'
     }
   ];
 
@@ -1799,7 +1623,7 @@ const Footer = () => {
             transition={{ delay: 0.3 }}
             className="text-[#94d2bd] mb-4 text-lg font-semibold"
           >
-            © 2025 MD. Mahmudul Hasan. All rights reserved.
+            © 2025 Showrav Karamkar. All rights reserved.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -1855,8 +1679,6 @@ export default function App() {
       <Hero />
       <About />
       <Education />
-      <Passions />
-      <Gaming />
       <Projects />
       <Research />
       <Skills />

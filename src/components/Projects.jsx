@@ -8,47 +8,49 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Women Safety System',
-      description: 'A comprehensive safety application designed to empower women with real-time emergency alerts, location sharing, and a trusted support network.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Google Maps API', 'Socket.io'],
-      github: 'https://github.com/Mahmudul20-42895-1/womensaftey',
+      title: 'Jewelry Management System V1',
+      description: 'A comprehensive jewelry management system with full CRUD operations, inventory tracking, and sales management. Built with modern web technologies including React, Node.js, PostgreSQL, and complete document management for a professional jewelry business solution.',
+      tech: ['React', 'Node.js', 'PostgreSQL', 'Express.js', 'Database Management'],
+      github: 'https://github.com/Showrav88/JewelryMSV1',
       images: [
-        '/images/women-safety-1.jpg',
-        '/images/women-safety-2.jpg',
-        '/images/women-safety-3.jpg'
+        '/images/documents/jewelry-ms-dashboard.png',
+        '/images/documents/jewelry-ms-inventory.png',
+        '/images/documents/jewelry-ms-sales.png'
       ],
-      color: '#7b9669'
+      color: '#d4af37'
     },
     {
-      title: 'Hotel Management System',
-      description: 'Full-featured hotel management solution with booking system, room management, and customer relationship management.',
-      tech: ['JavaScript', 'Database', 'REST API', 'PHP', 'HTML'],
-      github: 'https://github.com/Mahmudul20-42895-1/Learning-Web-Tech-AIUB/tree/main/wtdb(update)',
+      title: 'E2E Test Automation Framework',
+      description: 'Professional End-to-End (E2E) Test Automation Framework built with Playwright and Allure Reports. Automates testing for SauceDemo application using the Page Object Model (POM) pattern with different user behaviors. Features fully integrated CI/CD pipeline via GitHub Actions.',
+      tech: ['Playwright', 'Allure Reports', 'POM Pattern', 'GitHub Actions', 'JavaScript'],
+      github: 'https://github.com/Showrav88/sawglab_with_playwright_allure',
       images: [
-        '/images/hotel-management.jpg',
-        '/images/hotel-management2.jpg'
+        '/images/documents/e2e-test-framework-dashboard.png',
+        '/images/documents/e2e-test-report.png',
+        '/images/documents/e2e-test-execution.png'
       ],
-      color: '#6c8480'
+      color: '#ff6b6b'
     },
     {
-      title: 'Student Dashboard',
-      description: 'Interactive student management dashboard with attendance tracking, grade management, course enrollment, and performance analytics.',
-      tech: ['Python', 'Django', 'PostgreSQL', 'Bootstrap', 'Chart.js'],
-      github: 'https://github.com/Mahmudul20-42895-1/python-project.git',
+      title: 'iLearnX Automation (SQA Internship)',
+      description: 'Internship work as SQA Automation Engineer at iLearnX Tech. Contributed to building comprehensive test automation framework using Playwright and Java. Integrated multiple tools including Jira, VS Code, Excel management, and other automation applications for quality assurance.',
+      tech: ['Playwright', 'Java', 'Jira', 'Excel Automation', 'VS Code', 'Test Automation'],
+      github: 'https://github.com/Showrav88/ilearnx_Automation_Playwright-java-',
       images: [
-        '/images/student-dashboard.jpg',
-        '/images/student-dashboard2.jpg',
-        '/images/student-dashboard1.jpg'
-      ],
-      color: '#bac8b1'
+        '/images/documents/ilearnx-test-cases.png'],
+      color: '#4ecdc4'
     },
     {
-      title: 'Ticket Management System',
-      description: 'Efficient ticket tracking and management system with priority-based routing, real-time status updates, and team collaboration features.',
-      tech: ['JavaScript', 'Express.js', 'MySQL', 'Socket.io', 'JWT'],
-      github: 'https://github.com/Mahmudul20-42895-1',
-      images: ['/images/ticket-system.jpg'],
-      color: '#e0e7d7'
+      title: 'Bikroy.com Testing Project',
+      description: 'Comprehensive SQA testing project for "Bikroy.com" website using Selenium IDE. Test cases created for detailed testing of specific functionalities, ensuring quality assurance across all platform features with systematic test coverage.',
+      tech: ['Selenium IDE', 'Test Cases', 'QA Testing', 'Web Testing', 'Bikroy.com'],
+      github: 'https://github.com/Showrav88/Software-Quality-Assurance-and-Testing-Project',
+      images: [
+        '/images/documents/bikroy-test-cases.png',
+        '/images/documents/bikroy-selenium-ide.png',
+        '/images/documents/bikroy-test-results.png'
+      ],
+      color: '#95e1d3'
     }
   ];
 

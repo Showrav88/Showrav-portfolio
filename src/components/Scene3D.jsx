@@ -13,7 +13,7 @@ const BOOT_LINES = [
 ];
 
 const Scene3D = ({
-  introText = 'Hi, I am MD. Mahmudul Hasan.',
+  introText = 'Hi, I am Showrav karmakar.',
   profileSrc = '/images/profile.jpg',
   screenSrc = '/images/photography1.jpg', // screenshot shown inside the monitor mockup
   use3DCase = true, // set to true to show a small 3D case model near the monitor
@@ -264,7 +264,7 @@ const Scene3D = ({
         ctx.fillStyle = '#e9d8a6';
         ctx.font = '32px sans-serif';
         ctx.textAlign = 'center';
-        ctx.fillText('MD. Mahmudul Hasan', cx, cy + r + 40);
+        ctx.fillText('Showrav karmakar', cx, cy + r + 40);
 
         ctx.fillStyle = '#94d2bd';
         ctx.font = '18px sans-serif';
