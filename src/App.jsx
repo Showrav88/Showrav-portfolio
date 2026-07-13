@@ -1050,7 +1050,7 @@ const Skills = () => {
 
   const experiences = [
     {
-      title: 'Junior SQA Engineer',
+      title: 'Junior Software Engineer',
       company: 'Skiff Technologies',
       location: 'Chattogram, Bangladesh',
       period: ' April 2024– June 2024',
