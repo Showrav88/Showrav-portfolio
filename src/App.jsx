@@ -1014,7 +1014,7 @@ const Skills = () => {
     { name: 'React', color: '#0a9396' },
     { name: 'Git', color: '#1BA0D7' },
     { name: 'PostgreSQL', color: '#336791' },
-    { name: 'Dot net MVC', color: '#512BD4' },
+    { name: 'Angular', color: '#512BD4' },
     { name: 'Dot net API', color: '#512BD4' },
     { name: 'Playwright', color: '#9999FF' },
     { name: 'TypeScript', color: '#31A8FF' },
