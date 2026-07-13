@@ -1008,17 +1008,17 @@ const Skills = () => {
   ];
 
   const softwareTools = [
-    { name: 'Microsoft Office', color: '#D83B01' },
+    { name: 'CI/CD', color: '#D83B01' },
     { name: 'VS Code', color: '#007ACC' },
-    { name: 'Excel', color: '#217346' },
-    { name: 'Benefica', color: '#0a9396' },
-    { name: 'CISCO', color: '#1BA0D7' },
+    { name: 'VPS', color: '#217346' },
+    { name: 'React', color: '#0a9396' },
+    { name: 'Git', color: '#1BA0D7' },
     { name: 'PostgreSQL', color: '#336791' },
     { name: 'Dot net MVC', color: '#512BD4' },
     { name: 'Dot net API', color: '#512BD4' },
-    { name: 'Adobe Premiere Pro', color: '#9999FF' },
-    { name: 'Adobe Lightroom', color: '#31A8FF' },
-    { name: 'Photoshop', color: '#31A8FF' }
+    { name: 'Playwright', color: '#9999FF' },
+    { name: 'TypeScript', color: '#31A8FF' },
+    { name: 'JavaScript', color: '#31A8FF' }
   ];
 
   const operatingSystems = [
@@ -1035,10 +1035,10 @@ const Skills = () => {
       year: '2023'
     },
     {
-      title: 'Microsoft Excel Certified',
-      organization: 'Microsoft',
-      description: 'Demonstrated proficiency in data management, formula creation, data analysis, and report generation.',
-      year: '2023'
+      title: 'SQA: Manual & Automated Testing',
+      organization: 'Ostad',
+      description: 'Completed basic course covering fundamental concepts of Manual & Automated Testing.',
+      year: '2025'
     },
     {
       title: 'SQA: Manual & Automated Testing',
