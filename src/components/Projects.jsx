@@ -8,6 +8,29 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'AnantaOne — Multi-tenant SaaS for Water Production & B2B Distribution',
+      description: 'Full-stack PERN SaaS platform for a distilled-water factory in Bangladesh — inventory, production batches, B2B ordering, staff roles, and owner analytics. Multi-tenant from day one with Bengali/English support, RBAC, batch tracking, cash wallet, and barcode/QR tagging. Built with a local + cloud hybrid workflow using Cursor Cloud Agent and deployed on Render and Hostinger VPS.',
+      tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Prisma', 'SaaS', 'Socket.io', 'VPS'],
+      images: [
+        '/images/documents/anantaone-login.png',
+        '/images/documents/anantaone-dashboard.png',
+        '/images/documents/anantaone-product-catalog.png'
+      ],
+      color: '#48cae4'
+    },
+    {
+      title: 'Voicepilot — AI Call-Center Copilot',
+      description: 'Real-time AI copilot for contact-center agents — live headset role-play, policy-grounded coaching, and a supervisor floor synced in the browser. Agents get live "Say this now" coaching grounded in CRM data and policy; supervisors monitor risk and sentiment and send private whispers. Built with React + TanStack Start, Google Gemini, and Cursor Cloud Agents.',
+      tech: ['React', 'TypeScript', 'TanStack Start', 'Google Gemini', 'Cloudflare', 'AI', 'Web Speech API'],
+      github: 'https://github.com/Showrav88/call-companion',
+      images: [
+        '/images/documents/voicepilot-agent-console.png',
+        '/images/documents/voicepilot-supervisor-floor.png',
+        '/images/documents/voicepilot-coaching-detail.png'
+      ],
+      color: '#9d4edd'
+    },
+    {
       title: 'Jewelry Management System V1',
       description: 'A comprehensive jewelry management system with full CRUD operations, inventory tracking, and sales management. Built with modern web technologies including React, Node.js, PostgreSQL, and complete document management for a professional jewelry business solution.',
       tech: ['React', 'Node.js', 'PostgreSQL', 'Express.js', 'Database Management'],
@@ -171,15 +194,17 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105 mt-auto self-start"
-                      style={{ backgroundColor: project.color, color: '#001219' }}
-                    >
-                      <Github size={18} /> View on GitHub
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105 mt-auto self-start"
+                        style={{ backgroundColor: project.color, color: '#001219' }}
+                      >
+                        <Github size={18} /> View on GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
