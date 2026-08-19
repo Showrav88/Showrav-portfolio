@@ -1029,6 +1029,13 @@ const Skills = () => {
 
   const certificates = [
     {
+      title: 'Basics of Python',
+      organization: 'UniAthena · Cambridge International Qualifications (CIQ), UK',
+      description: 'Completed foundational Python course covering core programming concepts. Blockchain-verified certificate issued through UniAthena in partnership with CIQ, UK.',
+      year: '2026',
+      image: '/images/documents/python-basics-certificate.png'
+    },
+    {
       title: 'Cisco Certified - Introduction to Programming',
       organization: 'Cisco',
       description: 'Successfully completed certification program focused on foundational concepts of programming languages.',
@@ -1292,6 +1299,20 @@ const Skills = () => {
                 }}
                 className="bg-[#001219]/80 backdrop-blur-lg rounded-xl p-6 border-2 border-[#0a9396] transition-all duration-300"
               >
+                {cert.image && (
+                  <a
+                    href={cert.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block mb-4 rounded-lg overflow-hidden border border-[#0a9396]/40 hover:border-[#ee9b00] transition-colors"
+                  >
+                    <img
+                      src={cert.image}
+                      alt={`${cert.title} certificate`}
+                      className="w-full h-auto object-cover"
+                    />
+                  </a>
+                )}
                 <div className="flex items-start gap-3 mb-3">
                   <Award size={24} className="text-[#ee9b00] flex-shrink-0 mt-1" />
                   <div>
