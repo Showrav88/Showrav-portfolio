@@ -8,6 +8,29 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Feed Store Management Platform',
+      description: 'A production multi-tenant feed-store management app built with Next.js, PostgreSQL, and Prisma for poultry and dairy merchants in Bangladesh. It supports inventory, purchases, sales counter, wallet, and bilingual English/Bengali operations. Real merchants use it with live business data; I manage hosting, database, releases, and ongoing fixes for maintenance, shop settings, and pricing workflows.',
+      tech: ['Next.js', 'PostgreSQL', 'Prisma', 'Multi-tenant SaaS', 'Inventory', 'Bengali/English'],
+      images: [
+        '/images/documents/feed dashboards.png',
+        '/images/documents/feed wallets.png',
+        '/images/documents/feed analytics.png'
+      ],
+      userProof: 'In production · Used by real merchants',
+      color: '#2dd4bf'
+    },
+    {
+      title: "Q'mmerce — Shopify Catalog Automation",
+      description: 'A full-stack operations platform that turns competitor product URLs into draft Shopify listings with AI-written copy, mannequin views, and structured variants. The Next.js portal manages lookup enrichment, batch runs, history, and QA feedback, backed by PostgreSQL and repository-based lookup data. n8n workflows scrape pages, score copy overlap, generate images, build multi-variant payloads, and apply Shopify categories and metafields through GraphQL. Data-quality gates help prevent incorrect taxonomy and copied competitor text; a solo operator can take a product from plan-sheet row to live draft.',
+      tech: ['Next.js', 'PostgreSQL', 'n8n', 'Shopify GraphQL', 'AI', 'Automation'],
+      publicLink: 'https://drive.google.com/file/d/1A05Frz0sJ8cnWQOBGtz_BPih7ArQISsz/view?usp=sharing',
+      publicLinkLabel: 'View public project screenshots',
+      images: [
+        "/images/documents/Q'merce protal.png"
+      ],
+      color: '#f4a261'
+    },
+    {
       title: 'AnantaOne — Multi-tenant SaaS for Water Production & B2B Distribution',
       description: 'Full-stack PERN SaaS platform for a distilled-water factory in Bangladesh — inventory, production batches, B2B ordering, staff roles, and owner analytics. Multi-tenant from day one with Bengali/English support, RBAC, batch tracking, cash wallet, and barcode/QR tagging. Built with a local + cloud hybrid workflow using Cursor Cloud Agent and deployed on Render and Hostinger VPS.',
       tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Prisma', 'SaaS', 'Socket.io', 'VPS'],
@@ -32,7 +55,7 @@ const Projects = () => {
     },
     {
       title: 'Jewelry Management System V1',
-      description: 'A comprehensive jewelry management system with full CRUD operations, inventory tracking, and sales management. Built with modern web technologies including React, Node.js, PostgreSQL, and complete document management for a professional jewelry business solution.',
+      description: 'A comprehensive jewelry management system used by real users, with full CRUD operations, inventory tracking, and sales management. Built with React, Node.js, and PostgreSQL, it includes document management for a professional jewelry business workflow.',
       tech: ['React', 'Node.js', 'PostgreSQL', 'Express.js', 'Database Management'],
       github: 'https://github.com/Showrav88/JewelryMSV1',
       images: [
@@ -40,6 +63,7 @@ const Projects = () => {
         '/images/documents/jewelry-ms-inventory.png',
         '/images/documents/jewelry-ms-sales.png'
       ],
+      userProof: 'Used by real users',
       color: '#d4af37'
     },
     {
@@ -113,6 +137,11 @@ const Projects = () => {
                       onClick={() => setSelectedImage(project.images[currentImageIndex[index] || 0])}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#001219] via-transparent to-transparent opacity-60" />
+                    {project.userProof && (
+                      <span className="absolute top-4 left-4 z-10 rounded-full border border-emerald-200/50 bg-emerald-950/90 px-3 py-1.5 text-xs font-semibold text-emerald-100 shadow-lg">
+                        {project.userProof}
+                      </span>
+                    )}
                     
                     {/* Image Navigation Dots (only if multiple images) */}
                     {project.images.length > 1 && (
@@ -194,16 +223,31 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105 mt-auto self-start"
-                        style={{ backgroundColor: project.color, color: '#001219' }}
-                      >
-                        <Github size={18} /> View on GitHub
-                      </a>
+                    {(project.github || project.publicLink) && (
+                      <div className="mt-auto flex flex-wrap gap-3">
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold transition-all hover:scale-105 self-start"
+                            style={{ backgroundColor: project.color, color: '#001219' }}
+                          >
+                            <Github size={18} /> View on GitHub
+                          </a>
+                        )}
+                        {project.publicLink && (
+                          <a
+                            href={project.publicLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border font-semibold transition-all hover:scale-105 self-start text-[#e9d8a6]"
+                            style={{ borderColor: project.color }}
+                          >
+                            <ExternalLink size={18} /> {project.publicLinkLabel}
+                          </a>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>
