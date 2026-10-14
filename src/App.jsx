@@ -157,7 +157,8 @@ const AnimatedPCScreen = () => {
   const texts = [
     'I am Showrav Karamkar, a Software Engineer who turns coffee and logic into clean, interactive web experiences. I specialize in building robust apps with React and Python, focusing on where high-end performance meets great design. Welcome to my digital workspace—let\'s create something cool.',
     'Git commit -m \'I don\'t know what I\'m doing anymore 🚩\'',
-    'Software Engineer & Web Developer',
+    'Full stack Software Engineer',
+    '| React | Python | Node.js | TailwindCSS | Framer Motion .net mvc | SQL | MongoDB | REST APIs | GraphQL | AWS | Docker | CI/CD',
     'Creating amazing digital experiences',
     '99 little bugs in the code... patch one, 127 bugs in the code',
     'Error 404: Sleep Not Found',
@@ -819,7 +820,7 @@ const Hero = () => {
           >
             <div className="inline-block px-6 py-3 rounded-2xl bg-[#001219]/60 backdrop-blur-xl border border-[#0a9396]/30 shadow-2xl">
               <p className="text-base sm:text-lg md:text-xl text-[#e9d8a6]">
-                Software Engineer & Web Developer
+                Full stack Software Engineer
               </p>
             </div>
           </motion.div>
