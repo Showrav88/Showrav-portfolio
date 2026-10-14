@@ -16,7 +16,7 @@ const Projects = () => {
         '/images/documents/feed wallets.png',
         '/images/documents/feed analytics.png'
       ],
-      userProof: 'In production · Used by real merchants',
+      proofTags: ['1 real client', 'BDT 30K'],
       color: '#2dd4bf'
     },
     {
@@ -24,7 +24,7 @@ const Projects = () => {
       description: 'A full-stack operations platform that turns competitor product URLs into draft Shopify listings with AI-written copy, mannequin views, and structured variants. The Next.js portal manages lookup enrichment, batch runs, history, and QA feedback, backed by PostgreSQL and repository-based lookup data. n8n workflows scrape pages, score copy overlap, generate images, build multi-variant payloads, and apply Shopify categories and metafields through GraphQL. Data-quality gates help prevent incorrect taxonomy and copied competitor text; a solo operator can take a product from plan-sheet row to live draft.',
       tech: ['Next.js', 'PostgreSQL', 'n8n', 'Shopify GraphQL', 'AI', 'Automation'],
       publicLink: 'https://drive.google.com/file/d/1A05Frz0sJ8cnWQOBGtz_BPih7ArQISsz/view?usp=sharing',
-      publicLinkLabel: 'View public project screenshots',
+      publicLinkLabel: 'View public project live demo(video)',
       images: [
         "/images/documents/Q'merce protal.png"
       ],
@@ -39,6 +39,7 @@ const Projects = () => {
         '/images/documents/anantaone-dashboard.png',
         '/images/documents/anantaone-product-catalog.png'
       ],
+      proofTags: ['1 real client', 'BDT 20K'],
       color: '#48cae4'
     },
     {
@@ -63,7 +64,7 @@ const Projects = () => {
         '/images/documents/jewelry-ms-inventory.png',
         '/images/documents/jewelry-ms-sales.png'
       ],
-      userProof: 'Used by real users',
+      proofTags: ['10 real clients', 'BDT 10K/year'],
       color: '#d4af37'
     },
     {
@@ -137,10 +138,17 @@ const Projects = () => {
                       onClick={() => setSelectedImage(project.images[currentImageIndex[index] || 0])}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#001219] via-transparent to-transparent opacity-60" />
-                    {project.userProof && (
-                      <span className="absolute top-4 left-4 z-10 rounded-full border border-emerald-200/50 bg-emerald-950/90 px-3 py-1.5 text-xs font-semibold text-emerald-100 shadow-lg">
-                        {project.userProof}
-                      </span>
+                    {project.proofTags && (
+                      <div className="absolute top-4 left-4 z-10 flex flex-wrap gap-2">
+                        {project.proofTags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-emerald-200/50 bg-emerald-950/90 px-3 py-1.5 text-xs font-semibold text-emerald-100 shadow-lg"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     )}
                     
                     {/* Image Navigation Dots (only if multiple images) */}
